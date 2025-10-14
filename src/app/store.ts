@@ -1,9 +1,11 @@
 import type { ThunkAction, Action } from "@reduxjs/toolkit"
 import { configureStore } from "@reduxjs/toolkit"
 
+import playgroundReducer from "../components/Playground/store/slices"
+
 export const store = configureStore({
   reducer: {
-    //
+    playground: playgroundReducer,
   },
 })
 
