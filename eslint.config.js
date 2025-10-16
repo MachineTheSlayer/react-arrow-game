@@ -55,6 +55,7 @@ const eslintConfig = defineConfig(
     rules: {
       "no-undef": [0],
       "@typescript-eslint/consistent-type-definitions": [2, "type"],
+      "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/consistent-type-imports": [
         2,
         {
