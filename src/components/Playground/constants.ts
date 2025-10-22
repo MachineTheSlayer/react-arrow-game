@@ -3,7 +3,7 @@ import type { IMapArrowCodes } from "./types"
 export const INTERVAL_TIME = 3000
 
 export const MAP_ARROW_CODES: IMapArrowCodes = {
-  ArrowAUp: "⬆️",
+  ArrowUp: "⬆️",
   ArrowDown: "⬇️",
   ArrowLeft: "⬅️",
   ArrowRight: "➡️",

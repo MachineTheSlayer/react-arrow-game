@@ -1,5 +1,5 @@
 export type IMapArrowCodes = {
-  ArrowAUp: string
+  ArrowUp: string
   ArrowDown: string
   ArrowLeft: string
   ArrowRight: string
