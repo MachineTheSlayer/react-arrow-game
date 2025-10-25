@@ -4,3 +4,8 @@ export type IMapArrowCodes = {
   ArrowLeft: string
   ArrowRight: string
 }
+
+export type IEndGameConditions = {
+  SUCCESSS_COUNT: number
+  UNSUCCESS_COUNT: number
+}
