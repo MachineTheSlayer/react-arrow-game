@@ -6,6 +6,6 @@ export type IMapArrowCodes = {
 }
 
 export type IEndGameConditions = {
-  SUCCESSS_COUNT: number
+  SUCCESS_COUNT: number
   UNSUCCESS_COUNT: number
 }

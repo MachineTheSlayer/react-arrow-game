@@ -12,6 +12,6 @@ export const MAP_ARROW_CODES: IMapArrowCodes = {
 export const ARR_ARROW_CODES = Object.keys(MAP_ARROW_CODES)
 
 export const END_GAME_CONDITIONS: IEndGameConditions = {
-  SUCCESSS_COUNT: 3,
+  SUCCESS_COUNT: 3,
   UNSUCCESS_COUNT: 3,
 }

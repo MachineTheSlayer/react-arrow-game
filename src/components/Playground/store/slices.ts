@@ -19,13 +19,11 @@ export const playgroundSlice = createSlice({
     },
 
     setSteps: (state) => {
-      const randomKeys = Math.floor(Math.random() * ARR_ARROW_CODES.length)
-
-      console.log(ARR_ARROW_CODES[randomKeys])
+      const randomKey = Math.floor(Math.random() * ARR_ARROW_CODES.length)
 
       state.steps.push({
         step: state.currentStep,
-        currentValue: ARR_ARROW_CODES[randomKeys],
+        currentValue: ARR_ARROW_CODES[randomKey],
         enteredValue: null,
         success: null,
       })
@@ -80,4 +78,5 @@ export const {
   setUnsuccess,
   resetStore,
 } = playgroundSlice.actions
+
 export default playgroundSlice.reducer

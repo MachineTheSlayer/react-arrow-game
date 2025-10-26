@@ -38,7 +38,7 @@ const Playground: React.FC = () => {
 
   useEffect(() => {
     const isSuccessful =
-      state.totalSuccessful === END_GAME_CONDITIONS.SUCCESSS_COUNT
+      state.totalSuccessful === END_GAME_CONDITIONS.SUCCESS_COUNT
     const isUnsuccessful =
       state.totalUnsuccessful === END_GAME_CONDITIONS.UNSUCCESS_COUNT
     /* eslint-disable */
@@ -63,8 +63,8 @@ const Playground: React.FC = () => {
       <Score />
       {isShowModal && (
         <Modal
-          setIsShowModal={setIsShowModal}
           isSuccessEndGame={isSuccessEndGame}
+          setIsShowModal={setIsShowModal}
         />
       )}
     </div>
