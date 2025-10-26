@@ -1,4 +1,4 @@
-// import styles from "./Button.module.css"
+import cn from "classnames"
 
 import type {
   ButtonProps as MaterialButtonProps} from "@mui/material";
@@ -6,15 +6,20 @@ import {
   Button as MaterialButton
 } from "@mui/material"
 
-export type IButtonProps = {
-  //
-} & MaterialButtonProps
+import styles from "./Button.module.css"
+
+export type IButtonProps = {} & MaterialButtonProps
 
 const Button: React.FC<IButtonProps> = (props) => {
-  const { children } = props
+  const { children, className = "" } = props
 
   return (
-    <MaterialButton variant="contained" size="small" {...props}>
+    <MaterialButton
+      variant="contained"
+      size="small"
+      {...props}
+      className={cn(styles.button, className)}
+    >
       {children}
     </MaterialButton>
   )
