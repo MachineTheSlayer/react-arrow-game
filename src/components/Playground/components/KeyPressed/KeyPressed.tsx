@@ -17,7 +17,7 @@ const KeyPressed: React.FC<IKeyPressedProps> = (props) => {
 
   const dispatch = useAppDispatch()
 
-  const KeyPressedElement = useKeyPressedElement()
+  const keyPressedElement = useKeyPressedElement()
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
@@ -49,7 +49,7 @@ const KeyPressed: React.FC<IKeyPressedProps> = (props) => {
         </TypographyText>
 
         <div className={styles.wrapper}>
-          <span className={styles.icon}>{KeyPressedElement}</span>
+          <span className={styles.icon}>{keyPressedElement}</span>
         </div>
       </div>
     </div>

@@ -16,9 +16,7 @@ const Controls: React.FC<IControlsProps> = (props) => {
     <div>
       <Button
         endIcon={<PlayArrow />}
-        onClick={() => {
-          setIsTimerActive(true)
-        }}
+        onClick={() => { setIsTimerActive(true); }}
         disabled={isTimerActive}
         className={styles.button}
       >
@@ -26,9 +24,7 @@ const Controls: React.FC<IControlsProps> = (props) => {
       </Button>
       <Button
         endIcon={<Pause />}
-        onClick={() => {
-          setIsTimerActive(false)
-        }}
+        onClick={() => { setIsTimerActive(false); }}
         disabled={!isTimerActive}
         className={styles.button}
       >
